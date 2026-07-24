@@ -38,14 +38,14 @@ const ConceptC = () => {
         <section className="section container text-center animate-fade-in" style={{ padding: '2rem 0 6rem' }}>
           
           {/* Main Hero Logos */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: '4rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <img src="/jeonnam_transparent.png" alt="전남광주" style={{ width: '90px', height: '90px', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.3)' }} />
-              <span style={{ fontSize: '3.5rem', color: '#fff', fontWeight: '900', letterSpacing: '-0.05em', textShadow: '2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 0 #000' }}>전남광주</span>
+          <div className="logo-container">
+            <div className="logo-group">
+              <img src="/jeonnam_transparent.png" alt="전남광주" className="logo-img" style={{ borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.3)' }} />
+              <span className="logo-text" style={{ color: '#fff', textShadow: '2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 0 #000' }}>전남광주</span>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <img src="/gwangyang_transparent.png" alt="광양시" style={{ width: '90px', height: '90px', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.3)' }} />
-              <span style={{ fontSize: '3.5rem', color: '#fff', fontWeight: '900', letterSpacing: '-0.05em', textShadow: '2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 0 #000' }}>광양시</span>
+            <div className="logo-group">
+              <img src="/gwangyang_transparent.png" alt="광양시" className="logo-img" style={{ borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.3)' }} />
+              <span className="logo-text" style={{ color: '#fff', textShadow: '2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 0 #000' }}>광양시</span>
             </div>
           </div>
 
@@ -211,7 +211,7 @@ const ConceptC = () => {
               </div>
             </div>
             <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '3rem' }}>
-              <div className="gradient-text" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', fontSize: '2.5rem', fontWeight: 900, marginBottom: '2rem' }}>
+              <div className="gradient-text" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', fontSize: 'clamp(1.5rem, 8vw, 2.5rem)', fontWeight: 900, marginBottom: '2rem', whiteSpace: 'nowrap' }}>
                 <Phone size={36}/> 061-763-7114
               </div>
               <button className="btn btn-primary" style={{ padding: '1.25rem 4rem', fontSize: '1.25rem', border: 'none', width: '100%' }} onClick={handleApplyClick}>

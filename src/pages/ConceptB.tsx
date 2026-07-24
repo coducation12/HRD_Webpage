@@ -38,13 +38,13 @@ const ConceptB = () => {
     <div id="snap-container" className="theme-b-container">
       {/* Fixed Navigation - Brutalist Style */}
       <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, padding: '1rem', zIndex: 100 }}>
-        <div className="container brutal-box" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 2rem' }}>
-          <div style={{ fontSize: '1.75rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '-0.05em', display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+        <div className="container brutal-box" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 'clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem)' }}>
+          <div style={{ fontSize: 'clamp(1.2rem, 4vw, 1.75rem)', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '-0.05em', display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
             <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#000' }}>
               <Zap size={32} fill="#fcd34d" /> HRD BOOTCAMP
             </Link>
           </div>
-          <button className="brutal-btn" onClick={handleApplyClick} style={{ padding: '0.75rem 2rem', fontSize: '1.125rem' }}>지금 지원하기</button>
+          <button className="brutal-btn" onClick={handleApplyClick} style={{ padding: 'clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 2rem)', fontSize: 'clamp(0.875rem, 2.5vw, 1.125rem)' }}>지금 지원하기</button>
         </div>
       </nav>
 
@@ -68,14 +68,14 @@ const ConceptB = () => {
         <div className="container animate-fade-in" style={{ paddingTop: '2rem', position: 'relative', zIndex: 1 }}>
           
           {/* Main Hero Logos */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: '4rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-              <img src="/jeonnam_transparent.png" alt="전남광주" style={{ width: '80px', height: '80px' }} />
-              <span style={{ fontSize: '3rem', color: '#fff', fontWeight: '900', letterSpacing: '-0.05em', textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 3px 3px 0 #000' }}>전남광주</span>
+          <div className="logo-container">
+            <div className="logo-group">
+              <img src="/jeonnam_transparent.png" alt="전남광주" className="logo-img" />
+              <span className="logo-text" style={{ color: '#fff', textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 3px 3px 0 #000' }}>전남광주</span>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-              <img src="/gwangyang_transparent.png" alt="광양시" style={{ width: '80px', height: '80px' }} />
-              <span style={{ fontSize: '3rem', color: '#fff', fontWeight: '900', letterSpacing: '-0.05em', textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 3px 3px 0 #000' }}>광양시</span>
+            <div className="logo-group">
+              <img src="/gwangyang_transparent.png" alt="광양시" className="logo-img" />
+              <span className="logo-text" style={{ color: '#fff', textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 3px 3px 0 #000' }}>광양시</span>
             </div>
           </div>
 
@@ -162,7 +162,7 @@ const ConceptB = () => {
       <section className="snap-section brutal-bg-lavender">
         <div className="container flex-responsive" style={{ alignItems: 'center' }}>
           <div style={{ flex: '1' }}>
-            <img src="/tech_mentoring_1784788795886.png" alt="Mentoring" className="brutal-box" style={{ width: '100%', height: '700px', objectFit: 'cover', transform: 'rotate(-2deg)' }} />
+            <img src="/tech_mentoring_1784788795886.png" alt="Mentoring" className="brutal-box" style={{ width: '100%', height: 'clamp(300px, 50vh, 700px)', objectFit: 'cover', transform: 'rotate(-2deg)' }} />
           </div>
           <div style={{ flex: '1.5' }}>
             <h2 className="brutal-text" style={{ fontSize: '3.5rem', fontWeight: 900, marginBottom: '1rem' }}>3단계 레벨업 커리큘럼</h2>
@@ -187,16 +187,16 @@ const ConceptB = () => {
           <h2 className="brutal-text title-lg" style={{ fontWeight: 900, marginBottom: '4rem' }}>지원 안내 및 접수</h2>
           
           <div className="grid grid-cols-2" style={{ gap: '3rem', maxWidth: '1000px', margin: '0 auto 4rem', textAlign: 'left' }}>
-            <div className="brutal-box" style={{ padding: '3rem', backgroundColor: '#fcd34d' }}>
-              <h4 style={{ fontSize: '1.75rem', marginBottom: '1.5rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '1rem' }}><CheckSquare size={32}/> 지원 자격 (우선 선발)</h4>
-              <ul style={{ fontSize: '1.25rem', fontWeight: 700, lineHeight: 1.8, paddingLeft: '1.5rem' }}>
+            <div className="brutal-box" style={{ padding: 'clamp(1.5rem, 4vw, 3rem)', backgroundColor: '#fcd34d' }}>
+              <h4 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.75rem)', marginBottom: '1.5rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '1rem' }}><CheckSquare size={32}/> 지원 자격 (우선 선발)</h4>
+              <ul style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', fontWeight: 700, lineHeight: 1.8, paddingLeft: '1.5rem' }}>
                 <li>만 19세 이상 구직자 누구나 (청년)</li>
                 <li>광양/여수/순천 등 광양만권 거주자</li>
               </ul>
             </div>
-            <div className="brutal-box" style={{ padding: '3rem', backgroundColor: '#f9a8d4' }}>
-              <h4 style={{ fontSize: '1.75rem', marginBottom: '1.5rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '1rem' }}><CheckSquare size={32}/> 지원 제한 대상</h4>
-              <ul style={{ fontSize: '1.25rem', fontWeight: 700, lineHeight: 1.8, paddingLeft: '1.5rem' }}>
+            <div className="brutal-box" style={{ padding: 'clamp(1.5rem, 4vw, 3rem)', backgroundColor: '#f9a8d4' }}>
+              <h4 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.75rem)', marginBottom: '1.5rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '1rem' }}><CheckSquare size={32}/> 지원 제한 대상</h4>
+              <ul style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', fontWeight: 700, lineHeight: 1.8, paddingLeft: '1.5rem' }}>
                 <li>고용보험 가입 중인 재직자</li>
                 <li>재학생 (졸업예정자는 무관)</li>
                 <li>연매출 1.5억 이상 사업자</li>
@@ -204,12 +204,12 @@ const ConceptB = () => {
             </div>
           </div>
           
-          <div className="brutal-box" style={{ padding: '4rem', display: 'inline-block', minWidth: '80%', transform: 'rotate(1deg)' }}>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', fontSize: '4rem', fontWeight: 900, marginBottom: '2rem' }}>
-              <Phone size={56}/> 061-763-7114
+          <div className="brutal-box" style={{ padding: 'clamp(2rem, 5vw, 4rem)', display: 'inline-block', minWidth: '80%', maxWidth: '100%', transform: 'rotate(1deg)' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', fontSize: 'clamp(2rem, 8vw, 4rem)', fontWeight: 900, marginBottom: '2rem', whiteSpace: 'nowrap' }}>
+              <Phone size={40}/> 061-763-7114
             </div>
-            <p style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '3rem' }}>[ 전화 및 카카오톡 예비 신청 ] ➔ [ 인터뷰 ] ➔ [ 최종 합격 ]</p>
-            <button className="brutal-btn" style={{ padding: '2rem 5rem', fontSize: '2rem', display: 'inline-flex', alignItems: 'center', gap: '1rem', background: '#3b82f6', color: '#fff' }} onClick={handleApplyClick}>
+            <p style={{ fontSize: 'clamp(1rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: '3rem' }}>[ 전화 및 카카오톡 예비 신청 ] ➔ [ 인터뷰 ] ➔ [ 최종 합격 ]</p>
+            <button className="brutal-btn" style={{ padding: 'clamp(1rem, 3vw, 2rem) clamp(1.5rem, 5vw, 5rem)', fontSize: 'clamp(1.25rem, 4vw, 2rem)', display: 'inline-flex', alignItems: 'center', gap: '1rem', background: '#3b82f6', color: '#fff', width: '100%', maxWidth: '400px', justifyContent: 'center' }} onClick={handleApplyClick}>
               수강신청 폭격하기 <ArrowRight size={32} />
             </button>
           </div>

@@ -47,6 +47,35 @@ a { text-decoration: none; color: inherit; }
 .text-lg { font-size: clamp(1.125rem, 2vw, 1.5rem); }
 .text-base { font-size: clamp(1rem, 1.5vw, 1.25rem); }
 
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 2vw, 1rem);
+}
+.logo-img {
+  height: clamp(60px, 15vw, 100px);
+  width: clamp(60px, 15vw, 100px);
+  object-fit: contain;
+}
+.logo-text {
+  font-size: clamp(2.2rem, 8vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+@media (max-width: 767px) {
+  .logo-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
 /* Global Utilities */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;

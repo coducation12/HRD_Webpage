@@ -33,14 +33,14 @@ const ConceptA = () => {
         backgroundAttachment: 'fixed'
       }}>
         <div className="container">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: '4rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <img src="/jeonnam_transparent.png" alt="전남광주 마크" style={{ height: '100px', objectFit: 'contain' }} />
-              <span style={{ fontSize: '3.5rem', color: '#fff', fontWeight: '900', letterSpacing: '-0.05em', textShadow: '2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 0 #000' }}>전남광주</span>
+          <div className="logo-container">
+            <div className="logo-group">
+              <img src="/jeonnam_transparent.png" alt="전남광주 마크" className="logo-img" />
+              <span className="logo-text" style={{ color: '#fff', textShadow: '2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 0 #000' }}>전남광주</span>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <img src="/gwangyang_transparent.png" alt="광양시 마크" style={{ height: '100px', objectFit: 'contain' }} />
-              <span style={{ fontSize: '3.5rem', color: '#fff', fontWeight: '900', letterSpacing: '-0.05em', textShadow: '2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 0 #000' }}>광양시</span>
+            <div className="logo-group">
+              <img src="/gwangyang_transparent.png" alt="광양시 마크" className="logo-img" />
+              <span className="logo-text" style={{ color: '#fff', textShadow: '2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 0 #000' }}>광양시</span>
             </div>
           </div>
 
@@ -84,26 +84,26 @@ const ConceptA = () => {
             <img src="/students_studying_1784788777759.png" alt="Students Studying" style={{ width: '100%', borderRadius: '12px', filter: 'brightness(0.85) contrast(1.1)', border: '1px solid rgba(14, 165, 233, 0.4)', boxShadow: '0 0 20px rgba(14, 165, 233, 0.2)' }} />
           </div>
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <div className="neon-border" style={{ padding: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+            <div className="neon-border" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <div>
                 <div style={{ color: '#94a3b8', fontSize: '1.125rem' }}>교육비 및 교재비</div>
                 <div style={{ color: '#64748b', fontSize: '0.875rem' }}>전액 국비 지원</div>
               </div>
-              <div className="neon-text" style={{ fontSize: '2.25rem', fontWeight: 800, whiteSpace: 'nowrap' }}>전액 무료</div>
+              <div className="neon-text" style={{ fontSize: 'clamp(2rem, 5vw, 2.25rem)', fontWeight: 800 }}>전액 무료</div>
             </div>
-            <div className="neon-border" style={{ padding: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+            <div className="neon-border" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <div>
                 <div style={{ color: '#94a3b8', fontSize: '1.125rem' }}>훈련 참여 수당</div>
                 <div style={{ color: '#64748b', fontSize: '0.875rem' }}>일 9,200원 * 70일 산정</div>
               </div>
-              <div className="neon-text" style={{ fontSize: '2.25rem', fontWeight: 800, whiteSpace: 'nowrap' }}>644,000 원</div>
+              <div className="neon-text" style={{ fontSize: 'clamp(2rem, 5vw, 2.25rem)', fontWeight: 800 }}>644,000 원</div>
             </div>
-            <div className="neon-border" style={{ padding: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+            <div className="neon-border" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <div>
                 <div style={{ color: '#94a3b8', fontSize: '1.125rem' }}>교육 훈련 장려금</div>
                 <div style={{ color: '#64748b', fontSize: '0.875rem' }}>월 50만원 * 3개월 산정</div>
               </div>
-              <div className="neon-text" style={{ fontSize: '2.25rem', fontWeight: 800, whiteSpace: 'nowrap' }}>1,500,000 원</div>
+              <div className="neon-text" style={{ fontSize: 'clamp(2rem, 5vw, 2.25rem)', fontWeight: 800 }}>1,500,000 원</div>
             </div>
           </div>
         </div>
@@ -221,10 +221,10 @@ const ConceptA = () => {
             </div>
             
             <div style={{ borderTop: '1px solid rgba(14, 165, 233, 0.2)', paddingTop: '3rem' }}>
-              <div className="tech-font neon-text" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', fontSize: '2rem', marginBottom: '2rem' }}>
+              <div className="tech-font neon-text" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', fontSize: 'clamp(1.5rem, 8vw, 2rem)', marginBottom: '2rem', whiteSpace: 'nowrap' }}>
                 <Phone size={32}/> 061-763-7114
               </div>
-              <button className="btn btn-primary" style={{ padding: '1.25rem 4rem', fontSize: '1.25rem', fontWeight: 800 }} onClick={handleApplyClick}>
+              <button className="btn btn-primary" style={{ padding: 'clamp(1rem, 3vw, 1.25rem) clamp(2rem, 5vw, 4rem)', fontSize: 'clamp(1rem, 3vw, 1.25rem)', fontWeight: 800, width: '100%', maxWidth: '350px' }} onClick={handleApplyClick}>
                 수강신청 바로가기
               </button>
             </div>
