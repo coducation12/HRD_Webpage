@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ConceptA from './pages/ConceptA';
 import ConceptB from './pages/ConceptB';
 import ConceptC from './pages/ConceptC';
