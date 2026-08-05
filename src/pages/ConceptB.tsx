@@ -9,7 +9,7 @@ const ConceptB = () => {
 
   const handleApplyClick = () => {
     trackEvent('apply_button_click', { concept: 'B', location: 'slide_' + currentSlide });
-    window.open('https://forms.google.com/', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSdKj_mJwcvphWUM4NnoyORiJzhPhUr9uOwItGpn_d2XKsPbAg/viewform', '_blank');
   };
 
   useEffect(() => {
@@ -204,7 +204,7 @@ const ConceptB = () => {
             </div>
             <p style={{ fontSize: 'clamp(1rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: '3rem' }}>[ 전화 및 카카오톡 예비 신청 ] ➔ [ 인터뷰 ] ➔ [ 최종 합격 ]</p>
             <button className="brutal-btn" style={{ padding: 'clamp(1rem, 3vw, 2rem) clamp(1.5rem, 5vw, 5rem)', fontSize: 'clamp(1.25rem, 4vw, 2rem)', display: 'inline-flex', alignItems: 'center', gap: '1rem', background: '#3b82f6', color: '#fff', width: '100%', maxWidth: '400px', justifyContent: 'center' }} onClick={handleApplyClick}>
-              수강신청 폭격하기 <ArrowRight size={32} />
+              수강신청하기 <ArrowRight size={32} />
             </button>
           </div>
         </div>
