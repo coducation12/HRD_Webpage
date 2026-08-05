@@ -111,7 +111,6 @@ a { text-decoration: none; color: inherit; }
 /* Neo-Brutalism (Theme B) */
 .theme-b-container {
   min-height: 100vh;
-  overflow-y: auto;
   background-color: #fcd34d;
   color: #000000;
 }
@@ -137,13 +136,11 @@ a { text-decoration: none; color: inherit; }
 
 @media (min-width: 768px) {
   .theme-b-container {
-    height: 100vh;
-    scroll-snap-type: y proximity;
+    /* Removed scroll-snap for normal scrolling */
   }
   .snap-section {
-    height: 100vh;
-    scroll-snap-align: start;
-    padding: 0;
+    min-height: 100vh;
+    padding: 6rem 0;
   }
 }
 

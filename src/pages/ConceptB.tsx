@@ -13,25 +13,19 @@ const ConceptB = () => {
   };
 
   useEffect(() => {
-    const container = document.getElementById('snap-container');
-    if (!container) return;
-    
     const handleScroll = () => {
       const slideHeight = window.innerHeight;
-      const scrollY = container.scrollTop;
+      const scrollY = window.scrollY;
       const slideIndex = Math.round(scrollY / slideHeight);
       setCurrentSlide(slideIndex);
     };
     
-    container.addEventListener('scroll', handleScroll);
-    return () => container.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSlide = (index: number) => {
-    const container = document.getElementById('snap-container');
-    if (container) {
-      container.scrollTo({ top: window.innerHeight * index, behavior: 'smooth' });
-    }
+    window.scrollTo({ top: window.innerHeight * index, behavior: 'smooth' });
   };
 
   return (
