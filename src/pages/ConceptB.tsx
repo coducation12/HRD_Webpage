@@ -58,7 +58,7 @@ const ConceptB = () => {
 
       {/* Slide 1: Hero (Yellow) */}
       <section className="snap-section brutal-bg-yellow text-center" style={{ position: 'relative' }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0.15, backgroundImage: 'url("/smart_factory_promo_1784788744287.png")', backgroundSize: 'cover', backgroundPosition: 'center', mixBlendMode: 'multiply' }}></div>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0.15, backgroundImage: 'url("/smart_factory_hero_1785910864507.png")', backgroundSize: 'cover', backgroundPosition: 'center', mixBlendMode: 'multiply' }}></div>
         <div className="container animate-fade-in" style={{ paddingTop: '2rem', position: 'relative', zIndex: 1 }}>
           
           {/* Main Hero Logos */}
@@ -113,7 +113,7 @@ const ConceptB = () => {
             </div>
           </div>
           <div style={{ flex: 1 }}>
-            <img src="/students_studying_1784788777759.png" alt="Students" className="brutal-box" style={{ width: '100%', height: '600px', objectFit: 'cover', filter: 'contrast(1.2) grayscale(0.2)' }} />
+            <img src="/korean_students_studying_1785910882311.png" alt="Students" className="brutal-box" style={{ width: '100%', height: '600px', objectFit: 'cover', filter: 'contrast(1.2) grayscale(0.2)' }} />
           </div>
         </div>
       </section>
@@ -128,7 +128,7 @@ const ConceptB = () => {
 
           <div className="grid grid-cols-2" style={{ gap: '3rem' }}>
             <div className="brutal-box" style={{ backgroundColor: '#bfdbfe', transform: 'rotate(-1deg)', display: 'flex', flexDirection: 'column' }}>
-              <img src="/smart_factory_ai_1784785742542.png" alt="Smart Factory" style={{ width: '100%', height: '250px', objectFit: 'cover', borderBottom: '4px solid #000' }} />
+              <img src="/korean_smart_factory_engineer_1785910898368.png" alt="Smart Factory" style={{ width: '100%', height: '250px', objectFit: 'cover', borderBottom: '4px solid #000' }} />
               <div style={{ padding: '3rem' }}>
                 <Target size={48} style={{ marginBottom: '1rem' }}/>
                 <h3 style={{ fontSize: '2rem', fontWeight: 900, marginBottom: '1rem' }}>트랙 1. 스마트팩토리</h3>
@@ -139,7 +139,7 @@ const ConceptB = () => {
             </div>
             
             <div className="brutal-box" style={{ backgroundColor: '#fbcfe8', transform: 'rotate(1deg)', display: 'flex', flexDirection: 'column' }}>
-              <img src="/ai_data_analysis_1784788766808.png" alt="AI Data" style={{ width: '100%', height: '250px', objectFit: 'cover', borderBottom: '4px solid #000' }} />
+              <img src="/korean_ai_data_analyst_1785910913914.png" alt="AI Data" style={{ width: '100%', height: '250px', objectFit: 'cover', borderBottom: '4px solid #000' }} />
               <div style={{ padding: '3rem' }}>
                 <Target size={48} style={{ marginBottom: '1rem' }}/>
                 <h3 style={{ fontSize: '2rem', fontWeight: 900, marginBottom: '1rem' }}>트랙 2. AI + DATA 실무</h3>
@@ -156,7 +156,7 @@ const ConceptB = () => {
       <section className="snap-section brutal-bg-lavender">
         <div className="container flex-responsive" style={{ alignItems: 'center' }}>
           <div style={{ flex: '1' }}>
-            <img src="/tech_mentoring_1784788795886.png" alt="Mentoring" className="brutal-box" style={{ width: '100%', height: 'clamp(300px, 50vh, 700px)', objectFit: 'cover', transform: 'rotate(-2deg)' }} />
+            <img src="/korean_tech_mentoring_1785910930481.png" alt="Mentoring" className="brutal-box" style={{ width: '100%', height: 'clamp(300px, 50vh, 700px)', objectFit: 'cover', transform: 'rotate(-2deg)' }} />
           </div>
           <div style={{ flex: '1.5' }}>
             <h2 className="brutal-text" style={{ fontSize: '3.5rem', fontWeight: 900, marginBottom: '1rem' }}>3단계 레벨업 커리큘럼</h2>
